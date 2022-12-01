@@ -143,7 +143,8 @@ app.listen(8080,()=>{
     console.log("bievenidos al servidor",8080);
 });
 
-
+app.get(`/`, (req,res)=>{
+    res.send("Hola mundo")})
 
 function objectosEnpantalla(){
 fs.readFile('./Data1.txt', 'utf-8', (err, data) => {
